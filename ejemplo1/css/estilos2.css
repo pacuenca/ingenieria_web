@@ -1,0 +1,92 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #f1f1f1;
+	font-family: arial;
+}
+
+header.cabecera, section, footer{
+	background: #8DD400;
+	color: #00000;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.cabecera figure{
+	width: 40%;
+	display: inline-block;
+	padding: 1em 2em;
+}
+
+.cabecera form{
+	background: #3C5A00;
+	width: 50%;
+	height: 50px;
+	vertical-align: center;
+	display: inline-block;
+	text-align: center;
+}
+
+nav{
+	background: #E3C800;
+	text-align: center;
+	padding-top: 2em;
+	margin: 0.5% 5%;
+}
+
+.galeria{
+	height: 100px;
+	margin: 0.5% 5%;
+	padding-top: 3em;
+	text-align: center;	
+}
+
+aside{
+	background: #8DD400;
+	width: 90%;
+	margin: 0.2% 5%;
+	display: inline-block;	
+	text-align: center;
+	
+}
+
+aside section{
+	background: #3C5A00;
+	padding: 3px;
+	float: left;
+	margin: 7%;
+	width: 5%;
+}
+
+main{
+	background: #8DD400;
+	width: 90%;
+	margin: 0.5% 5%;
+	display: inline-block;	
+	text-align: center;
+}
+
+main article{
+	display: inline-block;
+	padding: 1em;
+	margin: 0.5% 20%;
+}
+
+.articulo1{
+	background: #3C5A00;
+	margin: 5% 20%;
+}
+
+
+.articulo2{
+	background: #3C5A00;
+	margin: 5% 20%;
+}
+
+footer h6{
+	padding: 2em 0;
+	text-align: center;
+}
+
