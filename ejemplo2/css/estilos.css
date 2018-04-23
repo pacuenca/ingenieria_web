@@ -134,6 +134,37 @@ footer h6{
 }
 
 @media screen and (max-width: 800px ){
+
+	header h1{
+		font-family: 'Josefin Slab';
+		color: #f2f2f2;
+		padding: 1em;
+		text-shadow: 3px 3px 4px #000;
+		float: right;
+		text-align: center;
+		margin-top: 10%;
+		margin-left: 50%;
+	}
+
+	header h1 span.slogan{
+		font-size: 0.6em;
+		color: #ccc;
+		float: right;
+	}
+
+	nav{
+		margin-top: 10%;
+
+	}
+
+
+	nav a{
+		
+	}
+
+	h2{
+		text-align: center;
+	}
 	
 	.serviciodetalle, .tipodetalle{
 		display: block;
@@ -144,6 +175,52 @@ footer h6{
 
 
 @media screen and (max-width: 480px ){
+	
+	header h1{
+		font-family: 'Josefin Slab';
+		color: #f2f2f2;
+		padding: 1em;
+		text-shadow: 3px 3px 4px #000;
+		float: right;
+		text-align: center;
+		margin-top: 72%;
+		margin-left: 25%;
+	}
+
+	header h1 span.slogan{
+		font-size: 0.6em;
+		color: #ccc;
+		float: right;
+	}
+
+
+	nav{
+		width: 100%;
+		text-align: center;
+		margin: 1px;
+		padding: none;
+		display: inline;
+		margin-top: 30%;
+	}
+
+	nav a{
+		display: inline;
+		font-size: 0.6em;
+		padding: 1px;
+		text-shadow: 1px 1px 10px #c4d85a;
+	}
+
+	nav a:first-child{
+	border-radius: 0 0 0 0;
+	}
+
+	nav a:last-child{
+		border-radius: 0 0 0 0;
+	}
+
+	h2{
+		text-align: center;
+	}
 	
 	.serviciodetalle, .tipodetalle{
 		display: block;
