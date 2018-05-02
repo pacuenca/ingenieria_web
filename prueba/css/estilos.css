@@ -1,0 +1,264 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	background: black;
+	height: 100%;
+	font-family: arial;
+}
+
+
+
+header{
+	display: inline;
+	vertical-align: middle;
+}
+
+
+header img{
+	padding: 2%;
+	width: 10%;
+	vertical-align: middle;
+}
+
+header nav{
+	width: 45%;
+	margin-left: 30%;
+	display: inline;
+	background: black;
+}
+
+header nav a{
+	display: inline;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	margin-right: 1.5%;
+}
+
+header .icon{
+	width: 21%;
+	float: right;
+	background: none;
+	display: inline-block;
+	float: right;
+	padding-top: 4.5%;
+	
+}
+
+header .icon a{
+	margin-left: 9%;
+}
+
+header .icon form input{
+	width: 70%;
+	border-radius: 10px;
+	margin-left: 5%;
+	background: white;
+}
+
+
+
+main .slider1 {
+	width: 100%;
+	background: url(../images/slider1.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #999;
+}
+
+main .slider1 p{
+	text-align: center;
+	padding-top: 52%;
+	padding-bottom: 5%;
+	color: white;
+	border-radius: red 2px solid;
+}
+
+
+.acerca{
+	width: 100%;
+	margin-top: 3%;
+	background: url(../images/acercade.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+.acerca h2{
+	padding-left: 8%;
+	padding-top: 16%;
+	color: white;
+	font-size: 3em;
+}
+
+.acerca p{
+	margin-left: 8%;
+	width: 20%;
+	text-align: justify;
+	padding-top: 2%;
+	padding-bottom: 30%;
+	font-size: 1em;
+	color: white;
+	
+}
+
+
+.fotos{
+	width: 100%;
+	background:url(../images/num_fotos.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+.fotos h3{
+	font-size: 4em;
+	padding: 5%;
+	text-align: center;
+	color: white;
+	border: 1px white solid;
+}
+
+
+.quienes{
+	width: 100%;
+	background: url(../images/quienes_somos.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+
+.quienes h2{
+	color: blue;
+	font-size: 3em;
+	margin-left: 70%;
+	padding-top: 22%;
+}
+
+.quienes p{
+	width: 25%;
+	text-align: justify;	
+	font-size: 1em;
+	color: blue;
+	margin-left: 70%;
+	padding-top: 2%;
+	padding-bottom: 14%;	
+}
+
+.espacio{
+	background: yellow;
+	width: 100%;
+	height: 40px;
+}
+
+
+.cuatrofotos{
+	width: 100%;
+	display: inline;
+	background: white;
+}
+
+.cuatrofotos .fo1{
+	background-repeat:  no-repeat;
+	background-size: cover;
+	display: inline;
+	padding-top: 5px;
+}
+
+.mas{
+	width: 100%;
+	background: white;
+}
+
+.mas a{
+	text-decoration: none;
+	font-size: 2em;
+	background: #153C90;
+	color: white;
+	margin: auto;
+}
+
+section{
+	background: url(../images/pie-logos.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;	
+}
+
+.final{
+	width: 100%;
+
+}
+
+.final .contacto{
+	margin-left: 10%;
+	display: inline;
+}
+
+.final .contacto h4{
+	color: white;
+	padding-left: 2em;
+	padding-top: 2em;
+}
+
+.final .contacto h6{
+	color: white;
+	padding: 2em;
+}
+
+
+.final .fin{
+	margin-left: 13%;
+	display: inline;
+}
+
+footer{
+	background: blue;
+}
+
+footer .f{
+	background: blue;
+	margin-left: 70%;
+	filter: grayscale(90%);
+}
+
+@media screen and (max-width: 800px ){
+
+	
+
+@media screen and (max-width: 480px ){
+	
+
+}
+
+
+Hello teacher and classmates ...
+1. My happiest day was when I drove a car for the first time.
+2. I remember it was a Sunday afternoon at approximately 1:00 p.m.
+3. My desire was always to drive a car, because I saw how my brothers enjoyed it.
+4. When I sat down the place to drive and had knowledge of what should be done to be able to drive.
+5. I always watched what my brothers did to drive and so I was learned.
+6. He was happy and sad at the same time, because when it happened that was minor and could not handle quietly.
+7. My dad always took me to practice weekends to lonely places.
+8. I had more practice over time and it was me who sometimes helped my dad.
+9. When I was driving for the first time I was enthusiastic because everything worked out very well.
+10. Practice more with time I was traveling with my dad and he only made me drive in places where there is no control.
+11. After years passed, I came to study but I was not yet old enough to get my driver's license.
+12. Then at age 19 I was in a cuso to get the license.
+13. When I got the license, I could drive without worry and I started to teach my sister how to drive.
+14.Only one time until now I was scared driving, it was on a road with a lot of fog.
+15. I already have a driver's license and I have traveled many places with my family.
+16. Now every time I drive, I know new places, which I will meet with friends or family.
+17. I will be 2 years old, since I got my driver's license.
+18. When I learned to drive, I could already help my dad at work.
+19. So I was encouraged to get the license, my dad has a car, which requires a driver's license.
+
+
+<section class="contacto">
+		<h4>Contactos</h4>
+		<h6>Dirección:<br>San Cayetano Alto S/N</br></h6>
+
+		<h6>E/mail:<br>fototeca@utpl.edu.ec</br></h6>
+
+		<h6>Teléfono:<br>07 370 1444</br></h6>
+	</section>
