@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de PHP</title>
+	<meta	charset="utf8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+<h1>Evento SISTEMAS-2018</h1>
+<h5>Cursos y Talleres de innovación</h5>
+</header>
+
+<main>
+	<section class="in">
+		<h4>Resgistro para el evento SISTEMAS-2018</h4>
+		<p>Si desea participar del evento nos debe brindar información personal.</p>
+
+	</section>
+
+	<form method="post" action="internas/registro_utpl.php">
+		<div class="datos">
+			<label class="label" for="">Nombres:</label>
+			<input type="text" name="nombres" placeholder="Nombres"><br>
+			<label class="label" for="">Apellidos:</label>
+			<input type="text" name="apellidos" placeholder="Apellidos"><br>
+			<label class="label" for="">Teléfono:</label>
+			<input type="number" name="telefono" placeholder="Teléfono"><br>
+			<label class="label" for="">Correo:</label>
+			<input type="email" name="correo" placeholder="Correo" required=""><br>
+			<label class="label" for="">Fecha de nacimiento:</label>
+			<input type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento"><br>
+			<label class="label" for="">Cédula:</label>
+			<input type="text" name="cedula" placeholder="Cédula"><br>
+		</div>
+		<div class="tipo_per">
+			<label for="">Persona:</label>
+			<select name="tipo" id=""><br>
+				<option value="1">Docente UTPL</option>
+				<option value="2">Estudiante UTPL</option>
+				<option value="3">Externos</option>
+			</select><br>
+		</div>
+
+		<div class="curso">
+			<label for="">Cursos:</label>	
+			<select name="curso" id=""><br>
+				<option value="1">JAVA</option>
+				<option value="2">ANDROID</option>
+				<option value="3">PHP</option>
+				<option value="0">Ninguno</option>
+			</select><br>
+		</div>
+		
+
+		<div class="taller">
+			<label for="">Talleres:</label>	
+			<input type="checkbox" name="c1" id="" value="1" >HTML
+			<input type="checkbox" name="c2" id="" value="2" >CSS
+			<input type="checkbox" name="c3" id="" value="3" >Visualización
+			<input type="checkbox" name="c4" id="" value="4" >Cocina<br>
+		</div>
+
+		
+		<button>Guardar</button>
+
+	</form>
+</main>
+<footer>
+	<h6>Creative Commons by pacuenca2012@gmail.com</h6>
+</footer>
+</body>
+
+</html>
