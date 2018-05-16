@@ -1,63 +1,147 @@
 body{
 	padding: 0px;
 	margin: 0px;
-	background: #AAAA39;
+	background: #779DC1;
 }
 
 header{
-	width: 90%;
-	height: 120px;
+	width: 96%;
+	height: 130px;
 	text-align: center;
+	background: #F9E66F;
+	margin: 2%;
+	border-radius: 10px ;	
+	border: #335F8A solid 3px;
+	font-family: 'Josefin Slab';
+	text-shadow: 2px 5px 10px #000000;
+	letter-spacing: 3px;
+	font-size: 1.2em;
+	color: #0E469F;
+}
+
+main{
+	display: inline-block;
+	width: 100%;
 }
 
 .in{
-	width: 40%;
-	background: blue;
-	float: left;
+	width: 41%;
+	display: inline-block;
+	margin-left: 4%;
+	background: #F9E66F;
+	color: #335F8A;
+	border-radius: 10px ;	
+	border: #D5D5D5 solid 10px;
 }
 
- main form .datos{
+.in h4{
+	font-size: 1.3em;
+	text-align: justify;
+	text-align: center;
+}
+
+.in p{
+	font-size: 1.2em;
+	text-align: justify;
+	padding: 4%;
+}
+
+
+.da{
 	width: 40%;
+	display: inline-block;
+	margin: 5%;
+	float: right;
+}
+
+.datos{
 	border-radius: 10px ;	
-	border: red solid 2px;
-	display: inline;
-	margin-left: 1%;
-	background: blue;
+	border: #D5D5D5 solid 5px;
+	width: 60%;
+	background: #F9E66F;
+}
+
+.datos label{
+	display: inline-block;
+	width: 120px;
+	margin: 2%;
+	text-align: left;
+	color: #335F8A;
+	padding-left: 2%;
 }
 
 .tipo_per{
-	width: 50%;
-	float: left;
-	margin-top: 5%;
 	border-radius: 10px ;	
-	border: red solid 2px;
-	display: inline;
-	background: blue;
-	margin-left: 1%;
+	border: #D5D5D5 solid 5px;
+	width: 60%;
+	background: #F9E66F;
+	margin-top: 1%;
+}
+
+.tipo_per label{
+	display: inline-block;
+	width: 120px;
+	margin: 2%;
+	text-align: left;
+	color: #335F8A;
+	padding-left: 2%;
 }
 
 .curso{
-	width: 50%;
-	float: left;
-	margin-top: 5%;
 	border-radius: 10px ;	
-	border: red solid 2px;
-	display: inline;
-	background: blue;
-	margin-left: 1%;
+	border: #D5D5D5 solid 5px;
+	width: 60%;
+	background: #F9E66F;
+	margin-top: 1%;
+}
+
+.curso label{
+	display: inline-block;
+	width: 120px;
+	margin: 2%;
+	color: #335F8A;
+	text-align: left;
+	padding-left: 2%;
 }
 
 .taller{
-	width: 80%;
 	border-radius: 10px ;	
-	border: red solid 2px;
-	display: inline;
-	background: blue;
-	margin-left: 1%;
+	border: #D5D5D5 solid 5px;
+	width: 90%;
+	background: #F9E66F;
+	margin-top: 1%;
+	color: #335F8A;
 }
 
-footer{
-	background: #000;
-	color: #ccc;
-	text-align: center;	
+.taller label{
+	display: inline-block;
+	width: 120px;
+	margin: 2%;
+	color: #335F8A;
+	text-align: left;
+	padding-left: 2%;
 }
+
+.guardar button{
+	margin-left: 22%;
+	margin-top: 5%;
+	font-size: 1.2em;
+	font-family: 'Josefin Slab';
+}
+
+		
+
+footer{
+	background: #F9E66F;
+	text-align: center;	
+	margin: 2%;
+	border-radius: 10px ;	
+	border: #335F8A solid 2px;
+	font-family: 'Josefin Slab';
+	text-shadow: 8px 1px 12px #000000;
+	letter-spacing: 3px;
+	font-size: 0.7em;
+	color: #0E469F;
+}
+
+	

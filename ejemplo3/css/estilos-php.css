@@ -1,0 +1,79 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background: #779DC1;
+}
+
+header{
+	width: 96%;
+	height: 130px;
+	text-align: center;
+	background: #F9E66F;
+	margin: 2%;
+	border-radius: 10px ;	
+	border: #335F8A solid 3px;
+	font-family: 'Josefin Slab';
+	text-shadow: 2px 5px 10px #000000;
+	letter-spacing: 3px;
+	font-size: 1.2em;
+	color: #0E469F;
+}
+
+main{
+	display: inline-block;
+	width: 100%;
+}
+
+.factura{
+	width: 45%;
+	margin-left: 24%;
+	background: #ccc;
+	padding: 3%;
+	border-radius: 10px ;	
+	border: #335F8A solid 3px;
+}
+
+.persona{
+	margin-left: 18%;
+	font-size: 1em;
+	margin-top: 2%;
+}
+
+.cursos{
+	margin-left: 18%;
+	font-size: 1em;
+	margin-top: 2%;	
+}
+
+.info{
+	text-align: center;
+}
+
+.valor{
+	margin-left: 20%;
+	font-size: 1em;
+}
+
+.descuento{
+	margin-left: 20%;
+	font-size: 1em;
+}
+
+.total{
+	margin-left: 20%;
+	font-size: 1em;
+}
+
+
+footer{
+	background: #F9E66F;
+	text-align: center;	
+	margin: 2%;
+	border-radius: 10px ;	
+	border: #335F8A solid 2px;
+	font-family: 'Josefin Slab';
+	text-shadow: 8px 1px 12px #000000;
+	letter-spacing: 3px;
+	font-size: 0.7em;
+	color: #0E469F;
+}
