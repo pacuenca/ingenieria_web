@@ -1,0 +1,99 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background: #9AA1A7;
+}
+
+header{
+	width: 96%;
+	height: 130px;
+	text-align: center;
+	background: #C8D4DE;
+	margin: 2%;
+	background: rgba(0,0,0,.5);
+	border-radius: 10px ;	
+	border: PowderBlue solid 3px;
+	font-family: 'Josefin Slab';
+	text-shadow: 2px 5px 10px #000000;
+	letter-spacing: 3px;
+	font-size: 1.2em;
+	color: white;
+}
+
+main{
+	display: inline-block;
+	width: 100%;
+}
+
+nav{
+	background: #9AC3E8 ;
+	text-align: center;
+	padding: 0.5em 1em;
+	margin-bottom: 2%;
+}
+nav a{
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+}
+nav a:hover{
+	background: #C62828;
+	color: #f2f2f2;
+	border-bottom: 2px solid #333;
+}
+
+.factura{
+	width: 45%;
+	margin-left: 24%;
+	background: #ccc;
+	padding: 3%;
+	border-radius: 10px ;	
+	border: #335F8A solid 3px;
+}
+
+.persona{
+	margin-left: 18%;
+	font-size: 1em;
+	margin-top: 2%;
+}
+
+.cursos{
+	margin-left: 18%;
+	font-size: 1em;
+	margin-top: 2%;	
+}
+
+.info{
+	text-align: center;
+}
+
+.valor{
+	margin-left: 20%;
+	font-size: 1em;
+}
+
+.descuento{
+	margin-left: 20%;
+	font-size: 1em;
+}
+
+.total{
+	margin-left: 20%;
+	font-size: 1em;
+}
+
+footer{
+	background: #F9E66F;
+	text-align: center;	
+	margin: 2%;
+	border-radius: 10px ;	
+	border: PowderBlue solid 2px;
+	font-family: 'Josefin Slab';
+	text-shadow: 8px 1px 12px #000000;
+	letter-spacing: 3px;
+	font-size: 0.9em;
+	color: white;
+	background: linear-gradient(#8BE357,#96C17D);
+	background: rgba(0,0,0,.6);
+}

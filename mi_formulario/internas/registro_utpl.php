@@ -1,54 +1,66 @@
 <?php
+	include("../dll/config.php");
+	include("../dll/mysql.php");
+	extract($_POST);
+	echo "<link href=\"../css/estilos-php.css\" rel=\"stylesheet\" type=\"text/css\" >"; 
+	$tipo_persona[1]="Docente UTPL";
+	$tipo_persona[2]="Estudiante UTPL";
+	$tipo_persona[3]="Externos UTPL";
 
-extract($_POST);
-echo "<link href=\"../css/estilos-php.css\" rel=\"stylesheet\" type=\"text/css\" >"; 
-$tipo_persona[1]="Docente UTPL";
-$tipo_persona[2]="Estudiante UTPL";
-$tipo_persona[3]="Externos UTPL";
-
-$c_curso=80;
-$c_taller=10;
-$val_cur=0;
-$num_taller=0;
-
-$curso_elegido[0]="No tiene cursos escogidos";
-$curso_elegido[1]="JAVA";
-$curso_elegido[2]="ANDROID";
-$curso_elegido[3]="PHP";
-$nombretaller=" ";
-$nombre_persona="";
-
-
-//Obtenemos el valor  apagar por el curso elegido.
-if ($curso) {
-	$val_cur=80;
-}else{
+	$c_curso=80;
+	$c_taller=10;
 	$val_cur=0;
-}
-//Obtenemos el valor a pagar por los talleres escogidos.
-if (isset($c1)) {
-	$num_taller+=30;
-	$nombretaller="HTML";
-}
+	$num_taller=0;
 
-if (isset($c2)) {
-	$num_taller+=30;
-	$nombretaller=$nombretaller.", CSS";
-}
+	$curso_elegido[0]="No tiene cursos escogidos";
+	$curso_elegido[1]="JAVA";
+	$curso_elegido[2]="ANDROID";
+	$curso_elegido[3]="PHP";
+	$nombretaller=" ";
+	$nombre_persona="";
 
-if (isset($c3)) {
-	$num_taller+=30;
-	$nombretaller=$nombretaller.", Visualización";
-}
 
-if (isset($c4)) {
-	$num_taller+=30;
-	$nombretaller=$nombretaller.", Cocina";
-}
+/*
+	$query="select * from talleres";
+	$talleres=mysql_query($query) or die('error de sql');
+	while ($taller=mysql_fetch_array($talleres,MYSQL_ASSOC)) {
+		if ($taller['nombre']==) {
+			# code...
+		}
+		?>
+	<option value="<?php echo $taller['id'];?>"><?php echo $taller['nombre'];?></option>
+	<?php
+		}
 
+
+	//Obtenemos el valor  apagar por el curso elegido.
+	if (isset($curso)) {
+		$val_cur=80;
+	}else{
+		$val_cur=0;
+	}
+	//Obtenemos el valor a pagar por los talleres escogidos.
+	if (isset($c1)) {
+		$num_taller+=30;
+		$nombretaller="HTML";
+	}
+
+	if (isset($c2)) {
+		$num_taller+=30;
+		$nombretaller=$nombretaller.", CSS";
+	}
+
+	if (isset($c3)) {
+		$num_taller+=30;
+		$nombretaller=$nombretaller.", Visualización";
+	}
+
+	if (isset($c4)) {
+		$num_taller+=30;
+		$nombretaller=$nombretaller.", Cocina";
+	}
+	*/
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,40 +83,40 @@ if (isset($c4)) {
 			<div class="persona">
 				<b>Nombres: </b>
 				<?php
-				echo "".$nombres
+				echo $nombres;
 				?>
 				<br>
 				<b>Apellidos: </b>
 				<?php
-				echo "".$apellidos;
+				echo $apellidos;
 				?>
 				<br>
 				<b>Tipo de persona: </b>
 				<?php
-				echo "".$tipo_persona[$tipo];
+				echo $tipo_persona[$tipo];
 				?>
 
 				<br>
 				<b>Teléfono: </b>
 				<?php
-				echo "".$telefono;
+				echo $telefono;
 				?>
 				<br>
 				<b>Correo: </b>
 				<?php
-				echo "".$correo;
+				echo $correo;
 				?>
 
 				<br>
 				<b>Fecha de Nacimiento: </b>
 				<?php
-				echo "".$fecha_nacimiento;
+				echo $fecha_nacimiento;
 				?>
 
 				<br>
 				<b>Cédula: </b>
 				<?php
-				echo "".$cedula;
+				echo $cedula;
 				?>
 			</div>
 			
@@ -114,20 +126,20 @@ if (isset($c4)) {
 			<div class="cursos">
 				<b>Curso: </b>
 				<?php
-				echo "".$curso_elegido[$curso];
+				echo $curso_elegido[$curso];
 				?>
 				<br>
 				<b>Talleres: </b>
-				<?php
-				echo "".$nombretaller;
-				?>
+				//<?php
+				//echo $nombretaller;
+				//?>
 			</div>
 			<h3 class="info"> <br>Detalles de pago:</h3>
 			
 
 			<?php
 			//Obtenemos el valor a pagar y el descuento correspondiente a cada tipo de persona.
-			$cal=(100+$val_cur+$num_taller);
+			/*$cal=(100+$val_cur+$num_taller);
 			$dd=$cal*0.1;
 			$de=$cal*0.2;
 			$desc=0;
@@ -178,6 +190,8 @@ if (isset($c4)) {
 					<b>Valor a pagar es : $</b>
 					<?php
 					echo "".$total;
+					//echo "<script>location.href='personas_registradas.php'</script>";
+					*/
 					?>
 				</div>
 		</section>

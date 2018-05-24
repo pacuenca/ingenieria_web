@@ -1,3 +1,10 @@
+<?php
+	include("dll/config.php");
+	include("dll/mysql.php");
+	extract($_POST);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +23,12 @@
 <h5>Cursos y Talleres de innovación</h5>
 </header>
 
+<nav>
+	<a href="#">Home</a>
+	<a href="internas/personas_registradas.php">Registros</a>
+
+</nav>
+
 <main>
 	<section class="in">
 		<h4>Resgistro para el evento SISTEMAS-LOJA-2018</h4>
@@ -23,7 +36,7 @@
 	</section>
 
 	<section class="da">
-		<form method="post" action="internas/registro_utpl.php">
+		<form method="post" action="internas/procesar2.php">
 			<div class="datos">
 				<label class="label" for="">Nombres: *</label>
 				<input type="text" name="nombres" placeholder="Nombres"><br>
@@ -37,6 +50,8 @@
 				<input type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento"><br>
 				<label class="label" for="">Cédula: *</label>
 				<input type="text" name="cedula" placeholder="Cédula"><br>
+				<label class="label" for="">Dirección: *</label>
+				<input type="text" name="direccion" placeholder="direccion"><br>
 			</div>
 			<div class="tipo_per">
 				<label for="">Persona: *</label>
@@ -50,19 +65,26 @@
 			<div class="curso">
 				<label for="">Cursos:</label>	
 				<select name="curso" id=""><br>
-					<option value="1">JAVA</option>
-					<option value="2">ANDROID</option>
-					<option value="3">PHP</option>
+					<option value="1">Manejo de proyectos</option>
+					<option value="2">Desarrollo en angular</option>
 					<option value="0">Ninguno</option>
 				</select><br>
 			</div>
 			
 			<div class="taller">
-				<label for="">Talleres: *</label>	
-				<input type="checkbox" name="c1" id="" value="1" >HTML
-				<input type="checkbox" name="c2" id="" value="2" >CSS
-				<input type="checkbox" name="c3" id="" value="3" >Visualización
-				<input type="checkbox" name="c4" id="" value="4" >Cocina<br>
+				<label for="">Talleres:</label>	
+				<select name="taller[]" id="taller" multiple=""><br>
+					<?php 
+		    		$query="select * from talleres";
+		    		$talleres=mysql_query($query) or die('error de sql');
+		    		while ($taller=mysql_fetch_array($talleres,MYSQL_ASSOC)) {
+					?>
+					<option value="<?php echo $taller['id'];?>"><?php echo $taller['nombre'];?></option>
+					<?php
+			    		}
+			    	?>
+				</select><br>	
+			
 			</div>
 			
 			<div class="guardar">
