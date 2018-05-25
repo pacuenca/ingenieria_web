@@ -74,6 +74,13 @@ echo "</table>";
 	//echo '<script>alert("Datos Guardados")</script>';
 	//echo "<script>location.href='../index.php'</script>";
 ?>
+
+<section>
+	<button><a href='crud_curso_e.php'>CRUD CURSO</a></button>
+	<button><a href='crud_taller_e.php'>CRUD TALLER</a></button>
+	<button><a href='numero_registrados/numero.php'>Personas registradas en talleres</a></button>
+
+</section>
 </main>
 	<footer>
 		<h6>Derechos Reservados UTPL 2018</h6>
